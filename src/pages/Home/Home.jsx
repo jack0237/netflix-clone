@@ -1,17 +1,17 @@
 import React from 'react'
 import './Home.css'
-import Logo from '../../assets/images/logo.png';
 import Icon from '../../assets/images/down-icon.png';
 import Img1 from '../../assets/images/feature-1.png';
 import Img2 from '../../assets/images/feature-2.png';
 import Img3 from '../../assets/images/feature-4.png';
 import Img4 from '../../assets/images/feature-3.png';
+import Nav from '../../components/Nav/Nav';
 
 const Home = () => {
   return (
     <>
       <div className='header'>
-        
+        <Nav/>
         <div className="header-content">
           <h1>Unlimited Shows, TV Programs and more</h1>
           <h3>Watch as much as you want, Cancel at anytime</h3>

@@ -11,13 +11,7 @@ const Home = () => {
   return (
     <>
       <div className='header'>
-        <nav>
-          <img src={Logo} alt="Netflix logo" className='logo' />
-          <div>
-            <button className='Language'>English <img src={Icon} alt="" /> </button>
-            <button>Sign in</button>
-          </div>
-        </nav>
+        
         <div className="header-content">
           <h1>Unlimited Shows, TV Programs and more</h1>
           <h3>Watch as much as you want, Cancel at anytime</h3>

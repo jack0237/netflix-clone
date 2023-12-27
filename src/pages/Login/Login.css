@@ -1,0 +1,123 @@
+.form-wrap{
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    width: 430px;
+    padding: 60px;
+    border-radius: 4px;
+    background: #000000b5;
+    transform: translate(-50%, 50%);
+}
+
+.form-wrap h2{
+    color: #fff;
+    font-size: 2rem;
+}
+.form-wrap .form{
+    margin: 25px 0 65px;
+}
+form .form-control{
+    position: relative;
+    height: 50px;
+    margin-bottom: 16px;
+}
+.form-control input{
+    height: 100%;
+    width: 100%;
+    background: #333;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    padding: 0 20px;
+}
+
+.form-control input:is(:focus, :valid ){
+    padding: 16px 20px 0;
+    background: #444;
+}
+.form-control label{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    color: #8c8c8c;
+    pointer-events: none;
+    font-size: 1rem;
+    transform: translateY(-50%);
+    transition: all 0.1s ease;
+}
+.form-control input:is(:focus, :valid ) ~ label {
+    
+    font-size: 0.75rem;
+    transform: translateY(-130%);
+}
+
+.form button{
+    width: 100%;
+    padding: 16px 0;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 4px;
+    cursor: pointer;
+    background: #db0001;
+    margin: 25px 0 10px;
+    transform: 0.1s ease;
+}
+
+.form button:hover{
+    background-color: #c40812;
+}
+
+.form .form-helper{
+    display: flex;
+    justify-content: space-between;
+}
+.form .remember{
+    display: flex;
+}
+.form .remember input{
+    margin-right: 5px;
+    accent-color: #333;
+}
+.form .form-helper :where(label, a){
+    font-size: 0.9rem;
+}
+
+.form-wrap :where(label, p, small, a){
+    color: #b3b3b3;
+}
+
+.form-wrap p a {
+    color: #fff;
+}
+.form-wrap small{
+    display: block;
+    margin-top: 15px;
+
+}
+.form-wrap small a{
+    color: #0071eb;
+}
+
+.form-wrap a{
+    text-decoration: none;
+}
+
+.form-wrap a:hover{
+    text-decoration: underline;
+}
+
+@media  (max-width: 740){
+    .form-wrapper{
+        padding: 20px;
+        top: 43%;
+        width: 100%;
+    }
+    .form-wrapper form{
+        margin: 25px 0 40px;
+    }
+}

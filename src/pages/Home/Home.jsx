@@ -72,8 +72,8 @@ const Home = () => {
         <ul className="accordion">
 
           <li>
-            <input type="radio" name='accordion' id='first' />
-            <label htmlFor="first">What is Netflix ?</label>
+            <input type="radio"  name='accordion' id='first' />
+            <label className='label-option' htmlFor="first">What is Netflix ?</label>
             <div className="content">
               Netflix is a streaming service that offers a wide variety of award-winning TV programmes, films, anime, documentaries and more on thousands of internet-connected devices.
 
@@ -83,7 +83,7 @@ const Home = () => {
 
           <li>
             <input type="radio" name='accordion' id='second' />
-            <label htmlFor="second">Howmuch does netflix cost ? </label>
+            <label className='label-option' htmlFor="second">Howmuch does netflix cost ? </label>
             <div className="content">
               Watch Netflix on your smartphone, tablet, smart TV, laptop or streaming device, all for one fixed monthly fee. Plans range from US$6.99 to US$22.99 a month. No extra costs, no contracts.
             </div>
@@ -91,7 +91,7 @@ const Home = () => {
 
           <li>
             <input type="radio" name='accordion' id='third' />
-            <label htmlFor="third">Where can i watch </label>
+            <label className='label-option' htmlFor="third">Where can i watch </label>
             <div className="content">
               Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.
 

